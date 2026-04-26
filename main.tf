@@ -74,3 +74,8 @@ resource "aws_s3_object" "webapp" {
   content      = file("${path.module}/assets/index.html")
   content_type = "text/html"
 }
+
+credentials "app.terraform.io" {
+  # valid user API token
+  token = "xxxxxx.atlasv1.zzzzzzzzzzzzz"
+}
